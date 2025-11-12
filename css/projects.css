@@ -1,0 +1,16 @@
+/* ----------------------PROJECTS SECTION  -----------------------------------*/
+#projects ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  > li {
+    flex: 1;
+  }
+  article {
+    border: 1px solid var(--color-border);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-bg-main);
+  }
+}

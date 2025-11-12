@@ -1,0 +1,16 @@
+/* Responsive per a la secció de contacte */
+@media (max-width: 768px) {
+    #aside {
+        display: none;
+    }
+
+  .primary-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+  #contact {
+    .contact-info ul {
+      gap: 1rem;
+    }
+  }
+}

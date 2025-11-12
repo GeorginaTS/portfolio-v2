@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georgina - Fullstack Developer</title>
+    <title>Georgina Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    
+    <header id="header" class="sticky">
+        <h2>Georgina. <span>Fullstack Developer</span></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">LinkedIn</a></li>
+                <li><a href="cv.html"> 📄 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="aside">
+            <ul>
+                <li><a href="#hero">🏠 Home</a></li>
+                <li><a href="#about">👨‍💻 About</a></li>
+                <li><a href="cv.html"> 📄 CV</a></li>
+                <li><a href="#contact">📡 Contact</a></li>
+            </ul>
+            <hr>
+            <div class="contact-info">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/georginats/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/georginats" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div>
+            <section id="hero">
+                <img src="./img/avatar3.png" alt="Georgina's Avatar">
+                <h2>Georgina</h2>
+                <h3>Fullstack Developer</h3>
+                <div>
+            </section>
+            <section id="about" class="about-content">
+                    <p class="intro">
+                        Sóc la <strong>Georgina</strong>, una desenvolupadora web apassionada per crear experiències
+                        digitals innovadores i funcionals.
+                        Amb una formació sòlida en les últimes tecnologies del sector, combino creativitat i tècnica per
+                        donar vida a projectes web únics.
+                    </p>
+
+                    <p class="values">
+                        Crec fermament en la importància del <strong>codi net</strong>, l'accessibilitat web i les bones
+                        pràctiques de desenvolupament.
+                        Cada línia de codi que escric està pensada per ser mantenible, escalable i seguir els estàndards
+                        de la indústria.
+                    </p>
+                    <div class="highlights">
+                        <h3>El que m'identifica:</h3>
+                        <ul>
+                            <li>🎯 Enfoc en l'experiència d'usuari</li>
+                            <li>⚡ Optimització de rendiment</li>
+                            <li>♿ Desenvolupament accessible</li>
+                            <li>📱 Disseny responsive</li>
+                            <li>🚀 Aprenentatge continu</li>
+                        </ul>
+                    </div>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript and TypeScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control with Git</li>
+                    <li>Frameworks: AngularJS, Vue.js</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="#">
+                            <article>
+                                <h3>Project 1</h3>
+                                <p>A brief description of Project 1.</p>
+                            </article>
+                        </a></li>
+                    <li><a href="#">
+                            <article>
+                                <h3>Project 2</h3>
+                                <p>A brief description of Project 2.</p>
+                            </article>
+                        </a></li>
+                    <li><a href="#">
+                            <article>
+                                <h3>Project 3</h3>
+                                <p>A brief description of Project 3.</p>
+                            </article>
+                        </a></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Get in touch! I'd love to hear about your project.</p>
+
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required rows="6"
+                            placeholder="Tell me about your project or question..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="primary-btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Georgina. All rights reserved.
+            <a href="https://www.linkedin.com/in/georginats/" target="_blank">LinkedIn</a>.
+        </p>
+    </footer>
 </body>
+
 </html>

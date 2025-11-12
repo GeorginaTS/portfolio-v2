@@ -14,10 +14,16 @@ Aquesta pràctica correspon al primer repte de l'assignatura de Frontend, centra
 ```
 practica1/
 ├── index.html          # Pàgina principal
-├── css/               # Fulls d'estil
+├── cv.html            # Pàgina del CV
+├── css/               # Fulls d'estil organitzats per components
+│   ├── styles.css     # Fitxer principal amb imports i estils globals
+│   ├── hero.css       # Estils per la secció hero
+│   ├── about.css      # Estils per la secció about me
+│   ├── projects.css   # Estils per la secció de projectes
+│   ├── contact.css    # Estils per formularis de contacte
+│   └── responsive.css # Media queries i adaptacions responsive
 ├── img/               # Imatges del projecte
-├── assets/            # Recursos addicionals
-└── README.md          # Aquest arxiu
+└── assets/            # Recursos addicionals
 ```
 
 ## Requisits tècnics
@@ -29,10 +35,13 @@ practica1/
 - Accessibilitat segons pautes WCAG
 
 ## Tecnologies utilitzades
-- HTML5
-- CSS3
-- Metodologia BEM per nomenclatura CSS
-- Flexbox/Grid per layout
+- HTML5 semàntic
+- CSS3 amb arquitectura modular
+- CSS nested syntax per organització d'estils
+- CSS custom properties (variables) per tematització
+- CSS @import per estructura modular
+- Flexbox/Grid per layout avançat
+- CSS animations amb animation-timeline
 - Media queries per responsive design
 
 ## Instal·lació i ús
@@ -48,26 +57,56 @@ practica1/
 
 3. Obre `index.html` al teu navegador web favorit o utilitza un servidor local:
    ```bash
-   # Amb Python 3
-   python -m http.server 8000
-   
    # Amb Node.js (http-server)
    npx http-server
    ```
 
 ## Funcionalitats implementades
-- [ ] Estructura HTML semàntica
-- [ ] Disseny responsive
-- [ ] Navegació accessible
-- [ ] Formularis validats
-- [ ] Optimització d'imatges
-- [ ] CSS organitzat i comentat
+- [x] Estructura HTML semàntica
+- [x] Disseny responsive amb mobile-first
+- [x] Navegació accessible amb sticky header
+- [x] Formularis validats amb HTML5
+- [x] Animacions de scroll amb CSS animation-timeline
+- [x] Arquitectura CSS modular per components
+- [x] CSS organitzat i comentat per seccions
+- [x] Sistema de temes amb CSS custom properties
+- [x] Sidebar sticky amb navegació interna
 
 ## Validació
-- [x] Validació HTML W3C
-- [x] Validació CSS W3C
-- [x] Test d'accessibilitat
+- [x] Validació HTML W3C (amb petites millores pendents)
+- [x] Validació CSS W3C 
+- [ ] Test d'accessibilitat WCAG complet
 - [x] Test responsive en diferents dispositius
+
+### Millores d'accessibilitat pendents:
+- [ ] Estructura jeràrquica de headings (h1 → h2 → h3)
+- [ ] Text alternatiu descriptiu per enllaços
+- [ ] Landmarks ARIA per navegació
+- [ ] Verificació de contrast de colors
+- [ ] Focus indicators visibles per teclat
+
+## Arquitectura CSS
+El projecte utilitza una arquitectura CSS modular i escalable:
+
+### Fitxer principal (styles.css)
+- Imports de tots els mòduls CSS
+- Variables globals (CSS custom properties)
+- Reset i estils base
+- Estils globals per etiquetes HTML
+
+### Mòduls per components
+- **hero.css**: Estils per la secció d'introducció
+- **about.css**: Estils per la presentació personal amb efectes visuals
+- **projects.css**: Estils per la galeria de projectes
+- **contact.css**: Estils per formularis i secció de contacte
+- **responsive.css**: Media queries centralitzades
+
+### Avantatges d'aquesta arquitectura
+- 🔧 **Mantenibilitat**: Cada component té el seu propi fitxer
+- 🚀 **Escalabilitat**: Fàcil afegir nous components
+- 📖 **Llegibilitat**: Codi organitzat i fàcil de trobar
+- 🔄 **Reutilització**: Components independents i modulars
+- 🎯 **Debugging**: Problemes localitzats per component
 
 ## Navegadors compatibles
 - Chrome 90+
@@ -77,9 +116,13 @@ practica1/
 
 ## Metodologia de desenvolupament
 - Desenvolupament mobile-first
-- Ús de variables CSS personalitzades
-- Codi net i ben documentat
-- Commits semàntics
+- Arquitectura CSS modular amb separació per components
+- Ús de CSS nested syntax per millor organització
+- Variables CSS personalitzades per consistència visual
+- Imports CSS per estructura escalable
+- Animacions modernes amb CSS animation-timeline
+- Codi net i ben documentat amb comentaris descriptius
+- Commits semàntics per historial clar
 
 ## Criteris d'avaluació
 Segons l'enunciat del projecte, s'avaluaran els següents aspectes:
@@ -91,7 +134,7 @@ Segons l'enunciat del projecte, s'avaluaran els següents aspectes:
 - Documentació del projecte
 
 ## Lliurament
-- **Data límit**: [Data segons enunciat]
+- **Data límit**: 16/11/2025
 - **Format**: Repositori Git amb codi font
 - **Documentació**: README.md i comentaris en codi
 
@@ -102,10 +145,10 @@ Segons l'enunciat del projecte, s'avaluaran els següents aspectes:
 - [WAVE Accessibility Checker](https://wave.webaim.org/)
 
 ## Autor
-**Nom**: [El teu nom]  
-**Email**: [el.teu.email@uoc.edu]  
+**Nom**: Georgina Tomàs
+**Email**: georginats.dev@gmail.com 
 **Assignatura**: Frontend - UOC  
-**Curs**: [Any acadèmic]
+**Curs**: 2025
 
 ## Llicència
 Aquest projecte forma part de la formació acadèmica a la UOC i està destinat únicament per a fins educatius.

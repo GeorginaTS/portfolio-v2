@@ -1,0 +1,28 @@
+/* ----------------------HERO SECTION  -----------------------------------*/
+
+#hero {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-bg-main);
+  box-shadow: none;
+
+  img {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,212 @@
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./projects.css');
+@import url('./contact.css');
+@import url('./responsive.css');
+
+:root {
+  --color-bg-main: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-text-main: #e6edf3;
+  --color-text-secondary: #a1b3c4;
+
+  /* Accents */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-success: #10b981;
+
+  /* Altres */
+  --color-border: #2a2f36;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  width: 100%;
+  max-width: 1280px;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 1rem;
+}
+header {
+  width: 100%;
+  background-color: var(--color-bg-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 0.5rem;
+  }
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary-hover);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  aside {
+    border: 2px solid purple;
+    width: 200px;
+    position: sticky;
+    top: 15vh;
+    height: 50vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--color-shadow);
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      a {
+        width: 100px;
+        background-color: var(--color-bg-secondary);
+        font-weight: bold;
+        color: var(--color-text-main);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4rem;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        background-color: var(--color-primary-hover);
+        color: #fff;
+      }
+    }
+  }
+}
+main > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+}
+section {
+  width: 100%;
+  background-color: var(--color-bg-secondary);
+  padding: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+
+  /* Estat inicial */
+  opacity: 0;
+  transform: translateY(120px);
+
+  /* Animació basada en scroll */
+  animation: revealOnScroll linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 25%;
+}
+section:last-child {
+  margin-bottom: 20vh;
+}
+@keyframes revealOnScroll {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 33%;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+th {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+.sticky {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+  .primary-btn {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--color-shadow);
+    align-self: flex-start;
+
+    &:hover {
+      background: var(--color-primary-hover);
+      box-shadow: 0 6px 12px var(--color-shadow);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px var(--color-shadow);
+    }
+  }
+
+
+
+
+

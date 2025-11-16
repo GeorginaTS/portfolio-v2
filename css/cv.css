@@ -112,6 +112,9 @@ hr {
   color: var(--color-tertiary);
   background-color: var(--color-tertiary);
 }
+i {
+  color: var(--color-tertiary);
+}
 a {
   color: var(--color-text-main);
   text-decoration: none;
@@ -179,7 +182,15 @@ section:last-child {
 }
 
 /* ASIDE */
-#skills > .skills-container > article {
+aside #contact-info > p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+/* skills */
+aside #skills > .skills-container > article {
   margin-top: 1rem;
   > ul {
     margin: 1rem 0;

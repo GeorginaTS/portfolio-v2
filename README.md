@@ -3,6 +3,8 @@
 ## Descripció
 Aquesta pràctica correspon al primer repte de l'assignatura de Frontend, centrada en el desenvolupament d'una pàgina web utilitzant HTML i CSS pur.
 
+👉 [Enllaç Demo](https://georginats.github.io/uoc-pac1/)
+
 ## Objectius
 - Aplicar els coneixements bàsics d'HTML5
 - Implementar estils CSS seguint les millors pràctiques

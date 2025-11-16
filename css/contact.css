@@ -98,8 +98,13 @@
     box-shadow: 0 2px 4px var(--color-shadow);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #contact {
       padding: 0 2rem;
+    }
+  } 
+  @media (max-width: 420px) {
+    #contact {
+      padding: 0 1rem;
     }
   } 

@@ -1,5 +1,5 @@
-.highlights {
-  padding: 2rem;
+#highlights {
+  padding: 0 2rem;
 
   h3 {
     margin-bottom: 1.5rem;
@@ -40,7 +40,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   .skill {
     width: 30%;
     flex: 1;

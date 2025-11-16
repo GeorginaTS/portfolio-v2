@@ -5,24 +5,24 @@
 }
 .hero-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   gap: 1.5rem;
-  line-height: 1;
-  >img {
-  min-width: 180px;
-  min-height: 180px;
-  aspect-ratio: 1/1;
-  max-width: 320px;
-  max-height: 320px;
-  border-radius: 100%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
+  margin: 3rem 0;
+  > img {
+    min-width: 180px;
+    min-height: 180px;
+    aspect-ratio: 1/1;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
 }
 
 strong {
   color: var(--color-primary-hover);
   font-weight: 600;
 }
-

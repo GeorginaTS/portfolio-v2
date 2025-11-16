@@ -64,21 +64,31 @@ ul {
 h1 {
   font-size: 4rem;
   color: var(--color-text-main);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  > span {
+    color: var(--color-tertiary);
+  }
 }
 h2 {
   width: 100%;
   text-align: center;
   font-size: 3rem;
   color: var(--color-text-main);
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0;
 }
 h3 {
   font-size: 1.5rem;
-  color: var(--color-text-main);
+  color: var(--color-accent);
 }
 h4 {
   font-size: 1.2rem;
   color: var(--color-text-main);
+}
+h5 {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-top: 0.5rem;
 }
 hr {
   border: none;
@@ -172,5 +182,11 @@ footer {
   ul {
     display: flex;
     gap: 1rem;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
   }
 }

@@ -11,6 +11,11 @@
                 "ca": "CIFO L'Hospitalet (Barcelona)",
                 "es": "CIFO L'Hospitalet (Barcelona)",
                 "en": "CIFO L'Hospitalet (Barcelona)"
+            },
+            "description": {
+                "ca": "He desenvolupat aplicacions multiplataforma posant en pràctica Angular.js, Ionic i Firebase per crear solucions natives per a Android i iOS.",
+                "es": "He desarrollado aplicaciones multiplataforma poniendo en práctica Angular.js, Ionic y Firebase para crear soluciones nativas para Android y iOS.",
+                "en": "I developed cross-platform applications putting into practice Angular.js, Ionic and Firebase to create native solutions for Android and iOS."
             }
         },
         {
@@ -24,6 +29,11 @@
                 "ca": "MERIT School (Barcelona)",
                 "es": "MERIT School (Barcelona)",
                 "en": "MERIT School (Barcelona)"
+            },
+            "description": {
+                "ca": "He adquirit coneixements sòlids en HTML5, CSS3, JavaScript i Vue.js per al frontend, i Node.js, Express, MongoDB i MySQL per al backend.",
+                "es": "He adquirido conocimientos sólidos en HTML5, CSS3, JavaScript y Vue.js para el frontend, y Node.js, Express, MongoDB y MySQL para el backend.",
+                "en": "I acquired solid knowledge in HTML5, CSS3, JavaScript and Vue.js for frontend, and Node.js, Express, MongoDB and MySQL for backend."
             }
         },
         {
@@ -37,6 +47,11 @@
                 "ca": "Factoria F5 (Barcelona)",
                 "es": "Factoria F5 (Barcelona)",
                 "en": "Factoria F5 (Barcelona)"
+            },
+            "description": {
+                "ca": "Vaig practicar React amb TypeScript, NestJS, MongoDB, MySQL i Git, aplicant metodologies àgils en projectes reals d'equip.",
+                "es": "Practiqué React con TypeScript, NestJS, MongoDB, MySQL y Git, aplicando metodologías ágiles en proyectos reales de equipo.",
+                "en": "I practiced React with TypeScript, NestJS, MongoDB, MySQL and Git, applying agile methodologies in real team projects."
             }
         },
         {
@@ -50,6 +65,11 @@
                 "ca": "Escola Multimedia FPC (Terrassa - Barcelona)",
                 "es": "Escuela Multimedia FPC (Terrassa - Barcelona)",
                 "en": "FPC Multimedia School (Terrassa - Barcelona)"
+            },
+            "description": {
+                "ca": "Vaig iniciar el meu camí professional aprenent disseny gràfic, desenvolupament web i producció audiovisual, que van establir les bases de la meva carrera tècnica.",
+                "es": "Inicié mi camino profesional aprendiendo diseño gráfico, desarrollo web y producción audiovisual, que establecieron las bases de mi carrera técnica.",
+                "en": "I started my professional path learning graphic design, web development and audiovisual production, which laid the foundation for my technical career."
             }
         }
     ],

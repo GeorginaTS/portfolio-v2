@@ -41,8 +41,8 @@ function renderEducation(educationData, lang) {
                 <div>
                     <h5>${item.year}</h5>
                     <div>
-                        <span>${item.title[lang]}</span>
-                        <br>
+                    <h6>${item.title[lang]}</h6>
+                        <p>${item.description[lang]}</p>
                         <i>${item.institution[lang]}</i>
                     </div>
                 </div>
@@ -74,7 +74,6 @@ function renderExperience(experienceData, lang) {
                     <h5>${item.years}</h5>
                     <div>
                         <h6>${item.title[lang]}</h6>
-                        <br>
                         <p>${item.description[lang]}</p>
                         <i>${item.location}</i>
                     </div>

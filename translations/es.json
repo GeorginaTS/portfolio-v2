@@ -29,21 +29,7 @@
     "tools": "Tools & DevOps"
   },
   "projects": {
-    "title": "Proyectos",
-    "caseus": {
-      "title": "Caseus · Cheese App",
-      "description": "Aplicación destinada a amantes del queso que facilita la gestión completa del proceso de elaboración, maduración y cata, con la posibilidad de compartir tus creaciones con la comunidad."
-    },
-    "boletus": {
-      "title": "Boletus App",
-      "description": "Aplicación destinada a los aficionados a la búsqueda de setas que permite registrar y organizar las ubicaciones encontradas para volver fácilmente, recibir notificaciones cuando estés cerca de un punto guardado y consultar la previsión meteorológica de cada zona."
-    },
-    "todo": {
-      "title": "Todo App",
-      "description": "Aplicación de gestión de tareas que permite organizar, priorizar y hacer seguimiento de tus actividades diarias de manera eficiente."
-    },
-    "demo": "Demo",
-    "viewCode": "Ver código"
+    "title": "Proyectos"
   },
   "contact": {
     "title": "Contáctame",
@@ -62,5 +48,20 @@
   },
   "footer": {
     "rights": "Todos los derechos reservados."
+  },
+  "cv": {
+    "contact": "CONTACTO",
+    "education": "EDUCACIÓN",
+    "experience": "EXPERIENCIA PROFESIONAL",
+    "certifications": "CERTIFICACIONES",
+    "languages": "IDIOMAS",
+    "languageLabel": "Idioma",
+    "levelLow": "Nivel bajo",
+    "levelMid": "Nivel medio",
+    "levelHigh": "Nivel alto",
+    "levelNative": "Nativo",
+    "catalan": "Catalán",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }

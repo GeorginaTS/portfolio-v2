@@ -17,9 +17,6 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    @media (max-width: 600px) {
-      grid-template-columns: 1fr;
-    }
   }
   .form-group {
     display: flex;
@@ -97,14 +94,4 @@
     transform: translateY(0);
     box-shadow: 0 2px 4px var(--color-shadow);
   }
-}
-@media (max-width: 768px) {
-    #contact {
-      padding: 0 2rem;
-    }
-  } 
-  @media (max-width: 420px) {
-    #contact {
-      padding: 0 1rem;
-    }
-  } 
+} 

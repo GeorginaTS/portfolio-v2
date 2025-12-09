@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <script src="./js/i18n.js" defer></script>
+    <script src="./js/projects-renderer.js" defer></script>
+    <script src="./js/contact-form.js" defer></script>
 </head>
 
 <body>
@@ -95,80 +97,18 @@
         <section id="projects">
             <h2 data-i18n="projects.title">Projects</h2>
             <ul>
-                <li>
-                    <article>
-                        <img src="./img/projects/project4.png" alt="Caseus · Cheese App">
-                        <div class="project-content">
-                            <h3 data-i18n="projects.caseus.title">Caseus · Cheese App</h3>
-                            <p data-i18n="projects.caseus.description">Aplicació destinada a amants del formatge que facilita la gestió completa del procés d'elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb la comunitat.</p>
-                            <ul>
-                                <li>Angular.js</li>
-                                <li>TypeScript</li>
-                                <li>Ionic</li>
-                                <li>Capacitor</li>
-                                <li>Express.js</li>
-                                <li>MongoDB</li>
-                                <li>Firebase</li>
-                            </ul>
-
-                        </div>
-                        <div class="project-links">
-                            <a href="https://cheese-29925.web.app/" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/ionic-cheese" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure codi</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="./img/projects/project5.png" alt="Boletus Project">
-                        <div class="project-content">
-                            <h3 data-i18n="projects.boletus.title">Boletus App</h3>
-                            <p data-i18n="projects.boletus.description">Aplicació destinada als aficionats a la recerca de bolets que permet registrar i organitzar les ubicacions trobades per tornar-hi fàcilment, rebre notificacions quan ets a prop d'un punt guardat i consultar la previsió meteorològica de cada zona.</p>
-                            <ul>
-                                <li>React.js</li>
-                                <li>TypeScript</li>
-                                <li>Ionic</li>
-                                <li>Capacitor</li>
-                                <li>FirebaseDB</li>
-                                <li>FirebaseStore</li>
-                                <li>OpenWeatherAPI</li>
-                            </ul>
-
-                        </div>
-                        <div class="project-links">
-                            <a href="https://boletus-eb305.web.app" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/boletus" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure codi</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="./img/projects/project1.png" alt="Todo App">
-                        <div class="project-content">
-                            <h3 data-i18n="projects.todo.title">Todo App</h3>
-                            <p data-i18n="projects.todo.description">Aplicació de gestió de tasques que permet organitzar, prioritzar i fer seguiment de les teves activitats diàries de manera eficient.</p>
-                            <ul>
-                                <li>Vue.js</li>
-                                <li>Pinia</li>
-                                <li>Tailwind</li>
-                                <li>Express.js</li>
-                                <li>MongoDB</li>
-                            </ul>
-
-                        </div>
-                        <div class="project-links">
-                            <a href="https://calm-smoke-01af5fd10.6.azurestaticapps.net" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/todo-app" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure Codi</a>
-                        </div>
-                    </article>
-                </li>
+                <!-- Generated dynamically by projects-renderer.js -->
             </ul>
         </section>
         <section id="contact">
             <h2 data-i18n="contact.title">Contacta'm</h2>
             <p data-i18n="contact.subtitle">Posa't en contacte! M'encantaria saber sobre el teu projecte.</p>
             <hr>
-            <form class="contact-form" action="#" method="post">
+            
+            <!-- Missatge de confirmació -->
+            <div id="form-status" style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; text-align: center;"></div>
+            
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mldqwqjk" method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name" data-i18n="contact.form.name">Nom *</label>

@@ -1,0 +1,53 @@
+[
+    {
+        "id": "caseus",
+        "image": "./img/projects/project4.png",
+        "title": {
+            "ca": "Caseus · Cheese App",
+            "es": "Caseus · Cheese App",
+            "en": "Caseus · Cheese App"
+        },
+        "description": {
+            "ca": "Aplicació destinada a amants del formatge que facilita la gestió completa del procés d'elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb la comunitat.",
+            "es": "Aplicación destinada a amantes del queso que facilita la gestión completa del proceso de elaboración, maduración y cata, con la posibilidad de compartir tus creaciones con la comunidad.",
+            "en": "Application for cheese lovers that facilitates complete management of the production, aging and tasting process, with the possibility of sharing your creations with the community."
+        },
+        "technologies": ["Angular.js", "TypeScript", "Ionic", "Capacitor", "Express.js", "MongoDB", "Firebase"],
+        "demoUrl": "https://cheese-29925.web.app/",
+        "repoUrl": "https://github.com/GeorginaTS/ionic-cheese"
+    },
+    {
+        "id": "boletus",
+        "image": "./img/projects/project5.png",
+        "title": {
+            "ca": "Boletus App",
+            "es": "Boletus App",
+            "en": "Boletus App"
+        },
+        "description": {
+            "ca": "Aplicació destinada als aficionats a la recerca de bolets que permet registrar i organitzar les ubicacions trobades per tornar-hi fàcilment, rebre notificacions quan ets a prop d'un punt guardat i consultar la previsió meteorològica de cada zona.",
+            "es": "Aplicación destinada a aficionados a la búsqueda de setas que permite registrar y organizar las ubicaciones encontradas para volver fácilmente, recibir notificaciones cuando estás cerca de un punto guardado y consultar la previsión meteorológica de cada zona.",
+            "en": "Application for mushroom hunting enthusiasts that allows you to record and organize found locations to easily return, receive notifications when you are near a saved point and check the weather forecast for each area."
+        },
+        "technologies": ["React.js", "TypeScript", "Ionic", "Capacitor", "FirebaseDB", "FirebaseStore", "OpenWeatherAPI"],
+        "demoUrl": "https://boletus-eb305.web.app",
+        "repoUrl": "https://github.com/GeorginaTS/boletus"
+    },
+    {
+        "id": "todo",
+        "image": "./img/projects/project1.png",
+        "title": {
+            "ca": "Todo App",
+            "es": "Todo App",
+            "en": "Todo App"
+        },
+        "description": {
+            "ca": "Aplicació de gestió de tasques que permet organitzar, prioritzar i fer seguiment de les teves activitats diàries de manera eficient.",
+            "es": "Aplicación de gestión de tareas que permite organizar, priorizar y hacer seguimiento de tus actividades diarias de manera eficiente.",
+            "en": "Task management application that allows you to organize, prioritize and track your daily activities efficiently."
+        },
+        "technologies": ["Vue.js", "Pinia", "Tailwind", "Express.js", "MongoDB"],
+        "demoUrl": "https://calm-smoke-01af5fd10.6.azurestaticapps.net",
+        "repoUrl": "https://github.com/GeorginaTS/todo-app"
+    }
+]

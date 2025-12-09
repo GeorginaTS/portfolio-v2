@@ -1,16 +1,78 @@
-/* Responsive per a la secció de contacte */
-@media (max-width: 768px) {
-    #aside {
-        display: none;
-    }
+/* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
+/* 768px and below */
+@media (max-width: 768px) {
+  /* Header - index.html */
+  header {
+    padding: 0.5rem 1rem;
+  }
+  
+  header > nav ul {
+    gap: 1rem;
+  }
+  
+  .link-text {
+    display: none;
+  }
+  
+  /* Language Selector */
+  .language-selector select {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    padding-right: 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Aside */
+  #aside {
+    display: none;
+  }
+
+  /* Contact section */
   .primary-btn {
     width: 100%;
     align-self: stretch;
   }
+  
   #contact {
-    .contact-info ul {
-      gap: 1rem;
-    }
+    padding: 0 2rem;
+  }
+  
+  #contact .contact-info ul {
+    gap: 1rem;
+  }
+}
+
+/* 720px and below - CV page */
+@media (max-width: 720px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  aside {
+    order: 1;
+  }
+  
+  .main-content > div {
+    order: 2;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 420px and below */
+@media (max-width: 420px) {
+  #contact {
+    padding: 0 1rem;
   }
 }

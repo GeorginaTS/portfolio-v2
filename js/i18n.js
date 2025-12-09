@@ -42,17 +42,22 @@ function applyTranslations() {
             } else if (element.tagName === 'BUTTON') {
                 element.textContent = translation;
             } else {
-                // Per altres elements, mantenir HTML intern si existeix
-                const hasHTML = element.querySelector('img, span[data-i18n], br');
-                if (hasHTML) {
-                    // Només actualitzar nodes de text directes
-                    element.childNodes.forEach(node => {
-                        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
-                            node.textContent = translation;
-                        }
-                    });
+                // Comprovar si la traducció conté HTML
+                if (translation.includes('<')) {
+                    element.innerHTML = translation;
                 } else {
-                    element.textContent = translation;
+                    // Per altres elements, mantenir HTML intern si existeix
+                    const hasHTML = element.querySelector('img, span[data-i18n], br');
+                    if (hasHTML) {
+                        // Només actualitzar nodes de text directes
+                        element.childNodes.forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                                node.textContent = translation;
+                            }
+                        });
+                    } else {
+                        element.textContent = translation;
+                    }
                 }
             }
         }
@@ -72,6 +77,16 @@ async function changeLanguage(lang) {
     const select = document.getElementById('languageSelect');
     if (select) {
         select.value = lang;
+    }
+    
+    // Notificar al CV renderer si existeix
+    if (window.cvRenderer && window.cvRenderer.renderCV) {
+        window.cvRenderer.renderCV(lang);
+    }
+    
+    // Notificar al projects renderer si existeix
+    if (window.projectsRenderer && window.projectsRenderer.renderAllProjects) {
+        window.projectsRenderer.renderAllProjects(lang);
     }
 }
 

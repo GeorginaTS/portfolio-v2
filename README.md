@@ -1,103 +1,208 @@
-# Pràctica 1 - HTML + CSS
+# Personal Portfolio - Georgina Tomas
 
-## Descripció
-Aquesta pràctica correspon al primer repte de l'assignatura de Frontend, centrada en el desenvolupament d'una pàgina web utilitzant HTML i CSS pur.
+## 📋 Description
+Multilingual personal portfolio developed with modern web technologies. Showcases my projects, skills, and professional experience as a Full-stack Developer.
 
-👉 [Enllaç Demo](https://georginats.github.io/uoc-pac1/)
+👉 **[Live Demo](https://georginats.github.io/portfolio-v2/)**
 
-## Objectius
-- Aplicar els coneixements bàsics d'HTML5
-- Implementar estils CSS seguint les millors pràctiques
-- Crear una estructura web semànticament correcta
-- Desenvolupar un disseny responsive
-- Complir amb els estàndards d'accessibilitat web
+## ✨ Key Features
 
-## Estructura del projecte
+- 🌍 **Multilingual**: Full support for Catalan, Spanish, and English
+- 📱 **Responsive**: Adaptive design for all devices
+- ⚡ **Performance**: Fast loading with modular JavaScript
+- 🎨 **Modern**: Clean and elegant interface
+- 📬 **Contact Form**: Integrated with Formspree
+- ♿ **Accessible**: Meets web accessibility standards
+- 🔄 **Scalable**: JSON-based architecture for easy updates
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **HTML5** semantic markup
+- **CSS3** with modular architecture
+  - CSS custom properties (variables)
+  - Flexbox and Grid Layout
+  - Media queries for responsive design
+  - Animations and transitions
+- **JavaScript ES6+**
+  - Async/await
+  - Fetch API
+  - LocalStorage
+  - DOM manipulation
+  - Custom i18n system
+
+### External Services
+- **Formspree** - Contact form management
+- **GitHub Pages** - Hosting
+
+## 📁 Project Structure
+
 ```
-practica1/
-├── index.html          # Pàgina principal
-├── cv.html            # Pàgina del CV
-├── css/               # Fulls d'estil organitzats per components
-│   ├── styles.css     # Fitxer principal amb imports i estils globals
-│   ├── hero.css       # Estils per la secció hero
-│   ├── about.css      # Estils per la secció about me
-│   ├── projects.css   # Estils per la secció de projectes
-│   ├── contact.css    # Estils per formularis de contacte
-│   └── responsive.css # Media queries i adaptacions responsive
-├── img/               # Imatges del projecte
-└── assets/            # Recursos addicionals
+portfolio-v2/
+├── index.html              # Main page
+├── cv.html                 # Resume page
+├── css/                    # Modular stylesheets
+│   ├── styles.css          # Main styles and imports
+│   ├── cv.css              # CV-specific styles
+│   ├── hero.css            # Hero section
+│   ├── projects.css        # Projects gallery
+│   ├── contact.css         # Contact form
+│   ├── language-selector.css
+│   └── responsive.css      # Centralized media queries
+├── js/                     # Modular JavaScript
+│   ├── i18n.js            # Internationalization system
+│   ├── cv-renderer.js     # Dynamic CV rendering
+│   ├── projects-renderer.js # Projects rendering
+│   └── contact-form.js    # Form handling
+├── data/                   # Structured data
+│   ├── cv-data.json       # Education and experience
+│   └── projects.json      # Projects with translations
+├── translations/           # Translation files
+│   ├── ca.json            # Catalan
+│   ├── es.json            # Spanish
+│   └── en.json            # English
+├── img/                    # Images and visual resources
+│   ├── projects/
+│   └── icons/
+└── README.md
 ```
 
-## Requisits tècnics
-- HTML5 semàntic
-- CSS3 pur (sense frameworks)
-- Disseny responsive
-- Compatibilitat amb navegadors moderns
-- Validació W3C
-- Accessibilitat segons pautes WCAG
+## 🎯 Features
 
-## Tecnologies utilitzades
-- HTML5 semàntic
-- CSS3 amb arquitectura modular
-- CSS nested syntax per organització d'estils
-- CSS custom properties (variables) per tematització
-- CSS @import per estructura modular
-- Flexbox/Grid per layout avançat
-- CSS animations amb animation-timeline
-- Media queries per responsive design
+### Internationalization System (i18n)
+- Real-time language switching without reload
+- Language preference persistence with LocalStorage
+- Translations organized in JSON files
+- Support for HTML within translations
 
-## Instal·lació i ús
-1. Clona aquest repositori:
+### Dynamic Rendering
+- **CV**: Education and experience loaded from JSON
+- **Projects**: Dynamic gallery with structured data
+- Automatic updates on language change
+
+### Contact Form
+- HTML5 validation
+- Formspree integration
+- Multilingual success/error messages
+- Anti-spam protection
+
+## 🚀 Installation and Usage
+
+### Local Setup
+
+1. **Clone the repository:**
    ```bash
-   git clone [URL-del-repositori]
+   git clone https://github.com/GeorginaTS/portfolio-v2.git
+   cd portfolio-v2
    ```
 
-2. Navega al directori del projecte:
+2. **Start a local server:**
    ```bash
-   cd practica1
-   ```
-
-3. Obre `index.html` al teu navegador web favorit o utilitza un servidor local:
-   ```bash
-   # Amb Node.js (http-server)
+   # Option 1: With Python
+   python -m http.server 8000
+   
+   # Option 2: With Node.js
    npx http-server
+   
+   # Option 3: With VS Code Live Server
+   # Right-click index.html > Open with Live Server
    ```
 
-## Validació
-- [x] Validació HTML W3C (amb petites millores pendents)
-- [x] Validació CSS W3C 
-- [ ] Test d'accessibilitat WCAG complet
-- [x] Test responsive en diferents dispositius
+3. **Open in browser:**
+   ```
+   http://localhost:8000
+   ```
 
-### Millores d'accessibilitat pendents:
-- [ ] Estructura jeràrquica de headings (h1 → h2 → h3)
-- [ ] Text alternatiu descriptiu per enllaços
-- [ ] Landmarks ARIA per navegació
-- [ ] Verificació de contrast de colors
-- [ ] Focus indicators visibles per teclat
+### Customization
 
-## Arquitectura CSS
-El projecte utilitza una arquitectura CSS modular i escalable:
+#### Add a new project:
+Edit `data/projects.json`:
+```json
+{
+  "id": "new-project",
+  "image": "./img/projects/new-project.png",
+  "title": {
+    "ca": "Nom del projecte",
+    "es": "Nombre del proyecto",
+    "en": "Project name"
+  },
+  "description": {
+    "ca": "Descripció...",
+    "es": "Descripción...",
+    "en": "Description..."
+  },
+  "technologies": ["React", "Node.js"],
+  "demoUrl": "https://...",
+  "repoUrl": "https://github.com/..."
+}
+```
 
-### Fitxer principal (styles.css)
-- Imports de tots els mòduls CSS
-- Variables globals (CSS custom properties)
-- Reset i estils base
-- Estils globals per etiquetes HTML
+#### Update education/experience:
+Edit `data/cv-data.json`
 
-### Mòduls per components
-- **hero.css**: Estils per la secció d'introducció
-- **about.css**: Estils per la presentació personal amb efectes visuals
-- **projects.css**: Estils per la galeria de projectes
-- **contact.css**: Estils per formularis i secció de contacte
-- **responsive.css**: Media queries centralitzades
+#### Modify translations:
+Edit files in `translations/`
 
-### Avantatges d'aquesta arquitectura
-- 🔧 **Mantenibilitat**: Cada component té el seu propi fitxer
-- 🚀 **Escalabilitat**: Fàcil afegir nous components
-- 📖 **Llegibilitat**: Codi organitzat i fàcil de trobar
-- 🔄 **Reutilització**: Components independents i modulars
-- 🎯 **Debugging**: Problemes localitzats per component
+## 🎨 CSS Architecture
+
+### Modular Organization
+- **styles.css**: Global variables, reset, base styles
+- **Specific modules**: Each section has its own CSS file
+- **responsive.css**: Centralized media queries
+
+### Custom CSS Variables
+```css
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --bg-color: #fff;
+  /* ... */
+}
+```
+
+## 📱 Responsive Design
+
+Main breakpoints:
+- **Desktop**: > 768px
+- **Tablet**: 720px - 768px
+- **Mobile**: < 600px
+- **Small mobile**: < 420px
+
+## 🔧 Modular JavaScript
+
+### i18n.js
+- Translation management
+- Dynamic language switching
+- LocalStorage persistence
+
+### cv-renderer.js
+- CV data loading
+- Dynamic HTML generation
+- i18n system synchronization
+
+### projects-renderer.js
+- Projects gallery rendering
+- Language change updates
+
+### contact-form.js
+- Form submission handling
+- Validation and visual feedback
+- Formspree integration
+
+## 📬 Contact
+
+- **LinkedIn**: [linkedin.com/in/georgina-tomas](https://www.linkedin.com/in/georgina-tomas/)
+- **GitHub**: [github.com/GeorginaTS](https://github.com/GeorginaTS)
+- **Email**: Through the portfolio contact form
+
+## 📄 License
+
+© 2025 Georgina Tomas. All rights reserved.
+
+---
+
+⭐ If you liked this project, leave a star on the repository!
 
 ## Navegadors compatibles
 - Chrome 90+

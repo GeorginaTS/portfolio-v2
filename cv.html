@@ -7,6 +7,8 @@
     <title>Curriculum Vitae · Georgina Tomas</title>
     <link rel="stylesheet" href="./css/cv.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="./js/i18n.js" defer></script>
+    <script src="./js/cv-renderer.js" defer></script>
 </head>
 
 <body>
@@ -14,17 +16,27 @@
         <a href="index.html">
             <h4>📎 Georgina</h4>
         </a>
+        
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" aria-label="Selecciona idioma">
+                <option value="ca">Català</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        
         <nav>
             <ul>
                 <li><a href="index.html#highlights"><span class="material-symbols-outlined">
                             person_celebrate
-                        </span><span class="link-text">Skills</span></a></li>
+                        </span><span class="link-text" data-i18n="nav.skills">Skills</span></a></li>
                 <li><a href="index.html#projects"><span class="material-symbols-outlined">
                             workspaces
-                        </span><span class="link-text">Projectes</span></a></li>
+                        </span><span class="link-text" data-i18n="nav.projects">Projectes</span></a></li>
                 <li><a href="index.html#contact"><span class="material-symbols-outlined">
                             contact_mail
-                        </span><span class="link-text">Contacte</span></a></li>
+                        </span><span class="link-text" data-i18n="nav.contact">Contacte</span></a></li>
             </ul>
         </nav>
     </header>
@@ -36,15 +48,6 @@
         <hr>
         <div class="main-content">
             <aside>
-                <section id="contact-info">
-                    <h3>CONTACTE</h3>
-                    <p><span class="material-symbols-outlined">
-                            mail
-                        </span> georginats.dev@gmail.com</p>
-                    <p><span class="material-symbols-outlined">
-                            location_on
-                        </span> Arbúcies, Girona</p>
-                </section>
                 <section id="skills">
                     <h3>SKILLS</h3>
                     <div class="skills-container">
@@ -87,117 +90,19 @@
             </aside>
             <div>
                 <section id="education">
-                    <h3>EDUCACIÓ</h3>
-                    <ul>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2025</h5>
-
-                                    <div>Desenvolupament d'aplicacions híbrides per a Android, iOS i PWA <br> <i>CIFO
-                                            L'Hospitalet (Barcelona)</i></div>
-                                </div>
-
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2024</h5>
-
-                                    <div>Certificat de Professinalitat - Desenvolupament d’aplicacions amb tecnologies
-                                        web <br> <i class="subtitle">MERIT School (Barcelona)</i></div>
-                                </div>
-
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2023</h5>
-                                    <div>Bootcamp Fullstack (850h) <br> <i>Factoria F5 (Barcelona)</i></div>
-                                </div>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>1997-2003</h5>
-
-                                    <div>Graduat en Multimedia <br> <i>Escola Multimedia FPC (Terrassa - Barcelona)</i>
-                                    </div>
-                                </div>
-
-                            </article>
-                        </li>
+                    <h3 data-i18n="cv.education">EDUCACIÓ</h3>
+                    <ul id="education-list">
+                        <!-- Generated dynamically by cv-renderer.js -->
                     </ul>
                 </section>
                 <section id="work-experience">
-                    <h3>EXPERIÈNCIA PROFESSIONAL</h3>
-  <ul>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2023 - 2011</h5>
-
-                                    <div><h5>Responsable de granja d'avicultura ecològica. Autònoma.</h5><br><p>Cuidadora de les aus, venta directa de pollastres, gallines i ous. Gestió de clients y proveidors. Gestió de facturació, impostos. Marqueting</p> <i>Sot del Palau  (Arbúcies)</i></div>
-                                </div>
-
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2011 - 2007</h5>
-
-                                    <div><h5>Directora de projectes online</h5><br><p>Disseny i desenvolupament de les 7 pàgines web de la empresa. Col·laboració amb els brand managers i equip comercial de la empresa.</p> <i>JIP MOTOR  (Barcelona)</i></div>
-                                </div>
-
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <div>
-                                    <div class="point"></div>
-                                    <div class="line"><span></span></div>
-                                </div>
-                                <div>
-                                    <h5>2007 - 2000</h5>
-
-                                    <div><h5>Desenvolupadora web</h5><br><p>Desenvolupadoora de diferents webs, direcció de projectes, tracte amb clientes i gestió de allotjament web (hosting)</p> <i>4D virtual  (Barcelona)</i></div>
-                                </div>
-
-                            </article>
-                        </li>
- 
+                    <h3 data-i18n="cv.experience">EXPERIÈNCIA PROFESSIONAL</h3>
+                    <ul id="experience-list">
+                        <!-- Generated dynamically by cv-renderer.js -->
                     </ul>
                 </section>
                 <section id="certifications">
-                    <h3>CERTIFICACIONS</h3>
+                    <h3 data-i18n="cv.certifications">CERTIFICACIONS</h3>
                     <ul>
                         <li><strong>2024. </strong> AWS Certified Cloud Practitioner</li>
                         <li><strong>2024. </strong> B1 in English</li>
@@ -205,47 +110,50 @@
                     </ul>
                 </section>
                 <section id="languages">
-                    <h3>IDIOMES</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Idioma</th>
-                                <th>Nivell baix</th>
-                                <th>Nivell mig</th>
-                                <th>Nivell alt</th>
-                                <th>Natiu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Català</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>x</td>
-                            </tr>
-                            <tr>
-                                <td>Espanyol</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>x</td>
-                            </tr>
-                            <tr>
-                                <td>Anglès</td>
-                                <td></td>
-                                <td>x</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 data-i18n="cv.languages">IDIOMES</h3>
+                    <div class="languages-container">
+                        <div class="language-item">
+                            <div class="language-name">
+                                <h5 data-i18n="cv.catalan">Català</h5>
+                            </div>
+                            <div class="language-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="level-text" data-i18n="cv.levelNative">Natiu</span>
+                            </div>
+                        </div>
+                        
+                        <div class="language-item">
+                            <div class="language-name">
+                                <h5 data-i18n="cv.spanish">Espanyol</h5>
+                            </div>
+                            <div class="language-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="level-text" data-i18n="cv.levelNative">Natiu</span>
+                            </div>
+                        </div>
+                        
+                        <div class="language-item">
+                            <div class="language-name">
+                                <h5 data-i18n="cv.english">Anglès</h5>
+                            </div>
+                            <div class="language-level">
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="level-text" data-i18n="cv.levelMid">Nivell mig</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Georgina. All rights reserved.</p>
+        <p>&copy; 2025 Georgina. <span data-i18n="footer.rights">Tots els drets reservats.</span></p>
         <div class="contact-info">
             <ul>
                 <li><a href="https://www.linkedin.com/in/georgina-tomas/" target="_blank"> <img

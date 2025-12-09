@@ -1,0 +1,100 @@
+﻿{
+    "education": [
+        {
+            "year": "2025",
+            "title": {
+                "ca": "Desenvolupament d'aplicacions híbrides per a Android, iOS i PWA",
+                "es": "Desarrollo de aplicaciones híbridas para Android, iOS y PWA",
+                "en": "Hybrid Application Development for Android, iOS and PWA"
+            },
+            "institution": {
+                "ca": "CIFO L'Hospitalet (Barcelona)",
+                "es": "CIFO L'Hospitalet (Barcelona)",
+                "en": "CIFO L'Hospitalet (Barcelona)"
+            }
+        },
+        {
+            "year": "2024",
+            "title": {
+                "ca": "Certificat de Professionalitat - Desenvolupament d'aplicacions amb tecnologies web",
+                "es": "Certificado de Profesionalidad - Desarrollo de aplicaciones con tecnologías web",
+                "en": "Professional Certificate - Web Application Development with Web Technologies"
+            },
+            "institution": {
+                "ca": "MERIT School (Barcelona)",
+                "es": "MERIT School (Barcelona)",
+                "en": "MERIT School (Barcelona)"
+            }
+        },
+        {
+            "year": "2023",
+            "title": {
+                "ca": "Bootcamp Fullstack (850h)",
+                "es": "Bootcamp Fullstack (850h)",
+                "en": "Fullstack Bootcamp (850h)"
+            },
+            "institution": {
+                "ca": "Factoria F5 (Barcelona)",
+                "es": "Factoria F5 (Barcelona)",
+                "en": "Factoria F5 (Barcelona)"
+            }
+        },
+        {
+            "year": "1997-2003",
+            "title": {
+                "ca": "Graduat en Multimedia",
+                "es": "Graduado en Multimedia",
+                "en": "Multimedia Graduate"
+            },
+            "institution": {
+                "ca": "Escola Multimedia FPC (Terrassa - Barcelona)",
+                "es": "Escuela Multimedia FPC (Terrassa - Barcelona)",
+                "en": "FPC Multimedia School (Terrassa - Barcelona)"
+            }
+        }
+    ],
+    "experience": [
+        {
+            "years": "2023 - 2011",
+            "title": {
+                "ca": "Responsable de granja d'avicultura ecològica. Autònoma.",
+                "es": "Responsable de granja de avicultura ecológica. Autónoma.",
+                "en": "Organic Poultry Farm Manager. Self-employed."
+            },
+            "description": {
+                "ca": "Cuidadora de les aus, venda directa de pollastres, gallines i ous. Gestió de clients i proveïdors. Gestió de facturació, impostos. Marqueting",
+                "es": "Cuidadora de las aves, venta directa de pollos, gallinas y huevos. Gestión de clientes y proveedores. Gestión de facturación, impuestos. Marketing",
+                "en": "Bird care, direct sales of chickens and eggs. Client and supplier management. Billing and tax management. Marketing"
+            },
+            "location": "Sot del Palau (Arbúcies)"
+        },
+        {
+            "years": "2011 - 2007",
+            "title": {
+                "ca": "Directora de projectes online",
+                "es": "Directora de proyectos online",
+                "en": "Online Projects Director"
+            },
+            "description": {
+                "ca": "Disseny i desenvolupament de les 7 pàgines web de l'empresa. Col·laboració amb els brand managers i equip comercial de l'empresa.",
+                "es": "Diseño y desarrollo de las 7 páginas web de la empresa. Colaboración con los brand managers y equipo comercial de la empresa.",
+                "en": "Design and development of the company's 7 websites. Collaboration with brand managers and commercial team."
+            },
+            "location": "JIP MOTOR (Barcelona)"
+        },
+        {
+            "years": "2007 - 2000",
+            "title": {
+                "ca": "Desenvolupadora web",
+                "es": "Desarrolladora web",
+                "en": "Web Developer"
+            },
+            "description": {
+                "ca": "Desenvolupadora de diferents webs, direcció de projectes, tracte amb clients i gestió d'allotjament web (hosting)",
+                "es": "Desarrolladora de diferentes webs, dirección de proyectos, trato con clientes y gestión de alojamiento web (hosting)",
+                "en": "Developer of various websites, project management, client relations and web hosting management"
+            },
+            "location": "4D virtual (Barcelona)"
+        }
+    ]
+}

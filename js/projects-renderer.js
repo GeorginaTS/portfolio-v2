@@ -9,7 +9,6 @@ async function loadProjectsData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         projectsData = await response.json();
-        console.log('Projects data loaded:', projectsData);
         return projectsData;
     } catch (error) {
         console.error('Error carregant dades dels projectes:', error);
@@ -35,11 +34,7 @@ function getButtonTranslations(lang) {
 // Generar HTML per projectes
 function renderProjects(projects, lang) {
     const container = document.querySelector('#projects ul');
-    console.log('Projects container:', container);
-    if (!container) {
-        console.error('No s\'ha trobat #projects ul');
-        return;
-    }
+    if (!container) return;
 
     const btnText = getButtonTranslations(lang);
     
@@ -63,30 +58,21 @@ function renderProjects(projects, lang) {
     `).join('');
     
     container.innerHTML = html;
-    console.log('Projects rendered');
 }
 
 // Renderitzar tots els projectes
 function renderAllProjects(lang) {
-    console.log('renderAllProjects called, projectsData:', projectsData);
-    if (!projectsData) {
-        console.error('No hi ha dades dels projectes');
-        return;
-    }
+    if (!projectsData) return;
     const activeLang = lang || getCurrentLanguage();
-    console.log('Rendering projects with language:', activeLang);
     renderProjects(projectsData, activeLang);
 }
 
 // Inicialitzar el renderitzat dels projectes
 async function initProjectsRenderer() {
-    console.log('initProjectsRenderer called');
     await loadProjectsData();
     if (projectsData) {
         const lang = getCurrentLanguage();
         renderAllProjects(lang);
-    } else {
-        console.error('Failed to load projects data');
     }
 }
 

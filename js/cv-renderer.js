@@ -9,7 +9,6 @@ async function loadCVData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         cvData = await response.json();
-        console.log('CV data loaded:', cvData);
         return cvData;
     } catch (error) {
         console.error('Error carregant dades del CV:', error);
@@ -25,11 +24,7 @@ function getCurrentLanguage() {
 // Generar HTML per educació
 function renderEducation(educationData, lang) {
     const container = document.querySelector('#education-list');
-    console.log('Education container:', container);
-    if (!container) {
-        console.error('No s\'ha trobat #education-list');
-        return;
-    }
+    if (!container) return;
     
     const html = educationData.map(item => `
         <li>
@@ -51,17 +46,12 @@ function renderEducation(educationData, lang) {
     `).join('');
     
     container.innerHTML = html;
-    console.log('Education rendered');
 }
 
 // Generar HTML per experiència
 function renderExperience(experienceData, lang) {
     const container = document.querySelector('#experience-list');
-    console.log('Experience container:', container);
-    if (!container) {
-        console.error('No s\'ha trobat #experience-list');
-        return;
-    }
+    if (!container) return;
     
     const html = experienceData.map(item => `
         <li>
@@ -83,31 +73,22 @@ function renderExperience(experienceData, lang) {
     `).join('');
     
     container.innerHTML = html;
-    console.log('Experience rendered');
 }
 
 // Renderitzar tot el CV
 function renderCV(lang) {
-    console.log('renderCV called, cvData:', cvData);
-    if (!cvData) {
-        console.error('No hi ha dades del CV');
-        return;
-    }
+    if (!cvData) return;
     const activeLang = lang || getCurrentLanguage();
-    console.log('Rendering with language:', activeLang);
     renderEducation(cvData.education, activeLang);
     renderExperience(cvData.experience, activeLang);
 }
 
 // Inicialitzar el renderitzat del CV
 async function initCVRenderer() {
-    console.log('initCVRenderer called');
     await loadCVData();
     if (cvData) {
         const lang = getCurrentLanguage();
         renderCV(lang);
-    } else {
-        console.error('Failed to load CV data');
     }
 }
 

@@ -1,5 +1,23 @@
 ﻿{
     "education": [
+              {
+            "year": "2025",
+            "title": {
+                "ca": "Frontend Developer",
+                "es": "Frontend Developer",
+                "en": "Frontend Developer"
+            },
+            "institution": {
+                "ca": "UOC (Universitat Oberta de Catalunya)",
+                "es": "UOC (Universitat Oberta de Catalunya)",
+                "en": "UOC (Universitat Oberta de Catalunya)"
+            },
+            "description": {
+                "ca": "He finalitzat el curs amb notes excel·lents, millorant els meus coneixements en HTML5, CSS3, JavaScript i Vue.js per crear aplicacions web modernes i accessibles.",
+                "es": "He finalizado el curso con notas excelentes, mejorando mis conocimientos en HTML5, CSS3, JavaScript y Vue.js para crear aplicaciones web modernas y accesibles.",
+                "en": "I completed the course with excellent grades, improving my knowledge in HTML5, CSS3, JavaScript and Vue.js to create modern and accessible web applications."
+            }
+        },
         {
             "year": "2025",
             "title": {

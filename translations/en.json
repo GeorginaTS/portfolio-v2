@@ -1,0 +1,66 @@
+﻿{
+  "meta": {
+    "lang": "en",
+    "title": "Georgina Portfolio"
+  },
+  "nav": {
+    "curriculum": "Resume",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Georgina Tomas",
+    "subtitle": "Full-stack Developer",
+    "description": "Driven by curiosity and the desire to create useful solutions."
+  },
+  "highlights": {
+    "title": "What defines me:",
+    "item1": "🎯 Focus on user experience",
+    "item2": "⚡ Performance optimization",
+    "item3": "♿ Accessible development",
+    "item4": "📱 Responsive design",
+    "item5": "🚀 Continuous learning"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "projects": {
+    "title": "Projects",
+    "caseus": {
+      "title": "Caseus · Cheese App",
+      "description": "Application for cheese lovers that facilitates the complete management of the production, maturation and tasting process, with the possibility of sharing your creations with the community."
+    },
+    "boletus": {
+      "title": "Boletus App",
+      "description": "Application for mushroom hunting enthusiasts that allows you to record and organize found locations to easily return, receive notifications when you are near a saved point and check the weather forecast for each area."
+    },
+    "todo": {
+      "title": "Todo App",
+      "description": "Task management application that allows you to organize, prioritize and track your daily activities efficiently."
+    },
+    "demo": "Demo",
+    "viewCode": "View code"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Get in touch! I'd love to hear about your project.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your.email@example.com",
+      "subjectPlaceholder": "Project inquiry",
+      "messagePlaceholder": "Tell me about your project or question..."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

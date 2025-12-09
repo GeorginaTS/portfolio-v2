@@ -1,0 +1,66 @@
+﻿{
+  "meta": {
+    "lang": "ca",
+    "title": "Georgina Portfolio"
+  },
+  "nav": {
+    "curriculum": "Curriculum",
+    "skills": "Habilitats",
+    "projects": "Projectes",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "title": "Georgina Tomas",
+    "subtitle": "Full-stack Developer",
+    "description": "Motivada per la curiositat i la voluntat de crear solucions útils."
+  },
+  "highlights": {
+    "title": "El que m'identifica:",
+    "item1": "🎯 Enfoc en l'experiència d'usuari",
+    "item2": "⚡ Optimització de rendiment",
+    "item3": "♿ Desenvolupament accessible",
+    "item4": "📱 Disseny responsive",
+    "item5": "🚀 Aprenentatge continu"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "projects": {
+    "title": "Projectes",
+    "caseus": {
+      "title": "Caseus · Cheese App",
+      "description": "Aplicació destinada a amants del formatge que facilita la gestió completa del procés d'elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb la comunitat."
+    },
+    "boletus": {
+      "title": "Boletus App",
+      "description": "Aplicació destinada als aficionats a la recerca de bolets que permet registrar i organitzar les ubicacions trobades per tornar-hi fàcilment, rebre notificacions quan ets a prop d'un punt guardat i consultar la previsió meteorològica de cada zona."
+    },
+    "todo": {
+      "title": "Todo App",
+      "description": "Aplicació de gestió de tasques que permet organitzar, prioritzar i fer seguiment de les teves activitats diàries de manera eficient."
+    },
+    "demo": "Demo",
+    "viewCode": "Veure codi"
+  },
+  "contact": {
+    "title": "Contacta'm",
+    "subtitle": "Posa't en contacte! M'encantaria saber sobre el teu projecte.",
+    "form": {
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "subject": "Assumpte",
+      "message": "Missatge",
+      "submit": "Enviar Missatge",
+      "namePlaceholder": "El teu nom complet",
+      "emailPlaceholder": "el.teu.email@exemple.com",
+      "subjectPlaceholder": "Consulta de projecte",
+      "messagePlaceholder": "Explica'm sobre el teu projecte o pregunta..."
+    }
+  },
+  "footer": {
+    "rights": "Tots els drets reservats."
+  }
+}

@@ -1,0 +1,66 @@
+﻿{
+  "meta": {
+    "lang": "es",
+    "title": "Georgina Portfolio"
+  },
+  "nav": {
+    "curriculum": "Curriculum",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Georgina Tomas",
+    "subtitle": "Full-stack Developer",
+    "description": "Motivada por la curiosidad y la voluntad de crear soluciones útiles."
+  },
+  "highlights": {
+    "title": "Lo que me identifica:",
+    "item1": "🎯 Enfoque en la experiencia de usuario",
+    "item2": "⚡ Optimización de rendimiento",
+    "item3": "♿ Desarrollo accesible",
+    "item4": "📱 Diseño responsive",
+    "item5": "🚀 Aprendizaje continuo"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "caseus": {
+      "title": "Caseus · Cheese App",
+      "description": "Aplicación destinada a amantes del queso que facilita la gestión completa del proceso de elaboración, maduración y cata, con la posibilidad de compartir tus creaciones con la comunidad."
+    },
+    "boletus": {
+      "title": "Boletus App",
+      "description": "Aplicación destinada a los aficionados a la búsqueda de setas que permite registrar y organizar las ubicaciones encontradas para volver fácilmente, recibir notificaciones cuando estés cerca de un punto guardado y consultar la previsión meteorológica de cada zona."
+    },
+    "todo": {
+      "title": "Todo App",
+      "description": "Aplicación de gestión de tareas que permite organizar, priorizar y hacer seguimiento de tus actividades diarias de manera eficiente."
+    },
+    "demo": "Demo",
+    "viewCode": "Ver código"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¡Ponte en contacto! Me encantaría saber sobre tu proyecto.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "namePlaceholder": "Tu nombre completo",
+      "emailPlaceholder": "tu.email@ejemplo.com",
+      "subjectPlaceholder": "Consulta de proyecto",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto o pregunta..."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

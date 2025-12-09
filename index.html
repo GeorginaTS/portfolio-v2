@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georgina Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <script src="./js/i18n.js" defer></script>
 </head>
 
 <body>
@@ -17,20 +15,22 @@
         <a href="#">
             <h4>📎 Georgina</h4>
         </a>
+        
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <select id="languageSelect" aria-label="Selecciona idioma">
+                <option value="ca">Català</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        
         <nav>
             <ul>
-                <li><a href="cv.html"><span class="material-symbols-outlined">
-book
-</span><span class="link-text">Curriculum</span> </a></li>
-                <li><a href="#highlights"><span class="material-symbols-outlined">
-person_celebrate
-</span><span class="link-text">Skills</span></a></li>
-                <li><a href="#projects"><span class="material-symbols-outlined">
-workspaces
-</span><span class="link-text">Projectes</span></a></li>
-                <li><a href="#contact"><span class="material-symbols-outlined">
-contact_mail
-</span><span class="link-text">Contacte</span></a></li>
+                <li><a href="cv.html"><span class="material-symbols-outlined" aria-hidden="true">book</span><span class="link-text" data-i18n="nav.curriculum">Curriculum</span></a></li>
+                <li><a href="#highlights"><span class="material-symbols-outlined" aria-hidden="true">person_celebrate</span><span class="link-text" data-i18n="nav.skills">Skills</span></a></li>
+                <li><a href="#projects"><span class="material-symbols-outlined" aria-hidden="true">workspaces</span><span class="link-text" data-i18n="nav.projects">Projectes</span></a></li>
+                <li><a href="#contact"><span class="material-symbols-outlined" aria-hidden="true">contact_mail</span><span class="link-text" data-i18n="nav.contact">Contacte</span></a></li>
             </ul>
         </nav>
     </header>
@@ -38,29 +38,27 @@ contact_mail
         <section id="hero">
             <div class="hero-content">
                 <div>
-                    <h1>Georgina Tomas<br><span>Full-stack Developer</span></h1>
-                    <h4>Motivada per la curiositat i la voluntat de crear solucions útils.</h3>
+                    <h1>Georgina Tomas<br><span data-i18n="hero.subtitle">Full-stack Developer</span></h1>
+                    <h4 data-i18n="hero.description">Motivada per la curiositat i la voluntat de crear solucions útils.</h4>
                 </div>
                 <img src="./img/avatar3.png" alt="Georgina's Avatar">
-
             </div>
         </section>
         <section id="highlights">
-            <h3>El que m'identifica:</h3>
+            <h3 data-i18n="highlights.title">El que m'identifica:</h3>
             <ul>
-                <li>🎯 Enfoc en l'experiència d'usuari</li>
-                <li>⚡ Optimització de rendiment</li>
-                <li>♿ Desenvolupament accessible</li>
-                <li>📱 Disseny responsive</li>
-                <li>🚀 Aprenentatge continu</li>
+                <li data-i18n="highlights.item1">🎯 Enfoc en l'experiència d'usuari</li>
+                <li data-i18n="highlights.item2">⚡ Optimització de rendiment</li>
+                <li data-i18n="highlights.item3">♿ Desenvolupament accessible</li>
+                <li data-i18n="highlights.item4">📱 Disseny responsive</li>
+                <li data-i18n="highlights.item5">🚀 Aprenentatge continu</li>
             </ul>
         </section>
         <section id="skills">
-
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
             <div class="skills-container">
                 <article class="skill">
-                    <h4>Frontend</h4>
+                    <h4 data-i18n="skills.frontend">Frontend</h4>
                     <ul>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -73,7 +71,7 @@ contact_mail
                     </ul>
                 </article>
                 <article class="skill">
-                    <h4>Backend</h4>
+                    <h4 data-i18n="skills.backend">Backend</h4>
                     <ul>
                         <li>Node.js</li>
                         <li>Express.js</li>
@@ -84,7 +82,7 @@ contact_mail
                     </ul>
                 </article>
                 <article class="skill">
-                    <h4>Tools & DevOps</h4>
+                    <h4 data-i18n="skills.tools">Tools & DevOps</h4>
                     <ul>
                         <li>Git · GitHub</li>
                         <li>Firebase</li>
@@ -95,16 +93,14 @@ contact_mail
             </div>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 data-i18n="projects.title">Projects</h2>
             <ul>
                 <li>
                     <article>
                         <img src="./img/projects/project4.png" alt="Caseus · Cheese App">
                         <div class="project-content">
-                            <h3>Caseus · Cheese App</h3>
-                            <p>Aplicació destinada a amants del formatge que facilita la gestió completa del procés
-                                d’elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb
-                                la comunitat. </p>
+                            <h3 data-i18n="projects.caseus.title">Caseus · Cheese App</h3>
+                            <p data-i18n="projects.caseus.description">Aplicació destinada a amants del formatge que facilita la gestió completa del procés d'elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb la comunitat.</p>
                             <ul>
                                 <li>Angular.js</li>
                                 <li>TypeScript</li>
@@ -117,11 +113,8 @@ contact_mail
 
                         </div>
                         <div class="project-links">
-                            <a href="https://cheese-29925.web.app/" target="_blank" class="btn-primary">
-                                Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/ionic-cheese" target="_blank"
-                                class="btn-secondary"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code">
-                                Veure codi</a>
+                            <a href="https://cheese-29925.web.app/" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
+                            <a href="https://github.com/GeorginaTS/ionic-cheese" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure codi</a>
                         </div>
                     </article>
                 </li>
@@ -129,10 +122,8 @@ contact_mail
                     <article>
                         <img src="./img/projects/project5.png" alt="Boletus Project">
                         <div class="project-content">
-                            <h3>Boletus App</h3>
-                            <p>Aplicació destinada als aficionats a la recerca de bolets que permet registrar i
-                                organitzar les ubicacions trobades per tornar-hi fàcilment, rebre notificacions quan
-                                ets a prop d’un punt guardat i consultar la previsió meteorològica de cada zona.</p>
+                            <h3 data-i18n="projects.boletus.title">Boletus App</h3>
+                            <p data-i18n="projects.boletus.description">Aplicació destinada als aficionats a la recerca de bolets que permet registrar i organitzar les ubicacions trobades per tornar-hi fàcilment, rebre notificacions quan ets a prop d'un punt guardat i consultar la previsió meteorològica de cada zona.</p>
                             <ul>
                                 <li>React.js</li>
                                 <li>TypeScript</li>
@@ -145,10 +136,8 @@ contact_mail
 
                         </div>
                         <div class="project-links">
-                            <a href="https://boletus-eb305.web.app" target="_blank" class="btn-primary">Demo
-                                <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/boletus" target="_blank" class="btn-secondary"><img
-                                    src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure codi</a>
+                            <a href="https://boletus-eb305.web.app" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
+                            <a href="https://github.com/GeorginaTS/boletus" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure codi</a>
                         </div>
                     </article>
                 </li>
@@ -156,10 +145,8 @@ contact_mail
                     <article>
                         <img src="./img/projects/project1.png" alt="Todo App">
                         <div class="project-content">
-                            <h3>Todo App</h3>
-                            <p>Aplicació destinada a amants del formatge que facilita la gestió completa del procés
-                                d’elaboració, maduració i tast, amb la possibilitat de compartir les teves creacions amb
-                                la comunitat. </p>
+                            <h3 data-i18n="projects.todo.title">Todo App</h3>
+                            <p data-i18n="projects.todo.description">Aplicació de gestió de tasques que permet organitzar, prioritzar i fer seguiment de les teves activitats diàries de manera eficient.</p>
                             <ul>
                                 <li>Vue.js</li>
                                 <li>Pinia</li>
@@ -170,52 +157,48 @@ contact_mail
 
                         </div>
                         <div class="project-links">
-                            <a href="https://calm-smoke-01af5fd10.6.azurestaticapps.net" target="_blank"
-                                class="btn-primary">
-                                Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
-                            <a href="https://github.com/GeorginaTS/todo-app" target="_blank" class="btn-secondary"><img
-                                    src="./img/icons/code-alt-svgrepo-com.svg" alt="View code">Veure Codi</a>
+                            <a href="https://calm-smoke-01af5fd10.6.azurestaticapps.net" target="_blank" class="btn-primary" data-i18n="projects.demo">Demo <img src="./img/icons/open-external-svgrepo-com.svg" alt="Live Demo"></a>
+                            <a href="https://github.com/GeorginaTS/todo-app" target="_blank" class="btn-secondary" data-i18n="projects.viewCode"><img src="./img/icons/code-alt-svgrepo-com.svg" alt="View code"> Veure Codi</a>
                         </div>
                     </article>
                 </li>
             </ul>
         </section>
         <section id="contact">
-            <h2>Contacta'm</h2>
-            <p>Posa't en contacte! M'encantaria saber sobre el teu projecte.</p>
+            <h2 data-i18n="contact.title">Contacta'm</h2>
+            <p data-i18n="contact.subtitle">Posa't en contacte! M'encantaria saber sobre el teu projecte.</p>
             <hr>
             <form class="contact-form" action="#" method="post">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="name">Nom *</label>
+                        <label for="name" data-i18n="contact.form.name">Nom *</label>
                         <input type="text" id="name" name="name" required placeholder="El teu nom complet">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Correu electrònic *</label>
+                        <label for="email" data-i18n="contact.form.email">Correu electrònic *</label>
                         <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="subject">Assumpte *</label>
+                    <label for="subject" data-i18n="contact.form.subject">Assumpte *</label>
                     <input type="text" id="subject" name="subject" required placeholder="Consulta de projecte">
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Missatge *</label>
-                    <textarea id="message" name="message" required rows="6"
-                        placeholder="Explica'm sobre el teu projecte o pregunta..."></textarea>
+                    <label for="message" data-i18n="contact.form.message">Missatge *</label>
+                    <textarea id="message" name="message" required rows="6" placeholder="Explica'm sobre el teu projecte o pregunta..."></textarea>
                 </div>
 
                 <div>
-                    <button type="submit" class="submit-btn">Enviar Missatge</button>
+                    <button type="submit" class="submit-btn" data-i18n="contact.form.submit">Enviar Missatge</button>
                 </div>
             </form>
         </section>
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Georgina. All rights reserved.</p>
+        <p>&copy; 2025 Georgina. <span data-i18n="footer.rights">Tots els drets reservats.</span></p>
         <div class="contact-info">
             <ul>
                 <li><a href="https://www.linkedin.com/in/georgina-tomas/" target="_blank"> <img src="./img/icons/linkedin-svgrepo-com.svg" alt="">LinkedIn</a></li>

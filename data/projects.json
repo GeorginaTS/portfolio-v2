@@ -34,6 +34,23 @@
         "repoUrl": "https://github.com/GeorginaTS/boletus"
     },
     {
+        "id": "recipeLAB",
+        "image": "./img/projects/project6.png",
+        "title": {
+            "ca": "RecipeLAB",
+            "es": "RecipeLAB",
+            "en": "RecipeLAB"
+        },
+        "description": {
+                "ca": "Generador de receptes amb intel·ligència artificial basat en els ingredients que tens disponibles. Multilingüe, modern i instal·lable com a PWA.",
+                "es": "Generador de recetas con inteligencia artificial basado en los ingredientes que tienes disponibles. Multilingüe, moderno e instalable como PWA.",
+                "en": "AI-powered recipe generator based on your available ingredients. Multilingual, modern, and installable as a PWA."
+        },
+        "technologies": ["Vue.js", "TypeScript", "Groq SDK", "Express.js", "Firebase functions", "Firebase Hosting"],    
+        "demoUrl": "https://recipelab-859ee.web.app/",        
+        "repoUrl": "https://github.com/GeorginaTS/recipe-lab/"    
+    },
+    {
         "id": "todo",
         "image": "./img/projects/project1.png",
         "title": {

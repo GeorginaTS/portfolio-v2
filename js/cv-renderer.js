@@ -99,6 +99,16 @@ if (document.readyState === 'loading') {
     initCVRenderer();
 }
 
+// Funcionalitat de descàrrega PDF
+document.addEventListener('DOMContentLoaded', () => {
+    const downloadBtn = document.getElementById('downloadPdfBtn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+            window.print();
+        });
+    }
+});
+
 // Fer disponible globalment
 window.cvRenderer = {
     renderCV,

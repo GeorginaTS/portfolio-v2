@@ -99,6 +99,48 @@ header {
   box-shadow: 0 0 0 3px rgba(36, 123, 123, 0.1);
 }
 
+/* Download PDF Button */
+.download-pdf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  text-align: center;
+}
+
+.download-pdf-btn:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.download-pdf-btn .material-symbols-outlined {
+  font-size: 1.3rem;
+}
+
+.download-pdf-btn .btn-text {
+  font-weight: 600;
+}
+
+/* Ajust de l'aside per alinear el botó */
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
 .language-selector option {
   background-color: var(--color-bg-main);
   color: var(--color-text-main);
@@ -394,5 +436,317 @@ footer {
     height: 100%;
     background-color: var(--color-text-secondary);
     text-align: center;
+  }
+}
+
+/* PRINT STYLES - Estils per impressió i PDF */
+@media print {
+  /* Eliminar colors de fons per estalviar tinta */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  html {
+    background: white;
+    height: auto;
+  }
+
+  body {
+    background: white;
+    color: black;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  /* Ocultar elements no necessaris en PDF */
+  header nav,
+  .download-pdf-btn,
+  .language-selector,
+  footer .contact-info {
+    display: none !important;
+  }
+
+  /* Header més compacte */
+  header {
+    position: static;
+    background: white;
+    color: black;
+    border-bottom: 1px solid #247b7b;
+    padding: 0.3rem 0;
+    margin: 0;
+    page-break-after: avoid;
+  }
+
+  header h4 {
+    color: #247b7b;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  /* Main compacte */
+  main {
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+
+  .main-header {
+    text-align: center;
+    margin: 0.3rem 0;
+    padding: 0;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .main-header h2 {
+    color: #247b7b;
+    font-size: 1.4rem;
+    margin: 0 0 0.1rem 0;
+    line-height: 1.2;
+  }
+
+  .main-header h3 {
+    color: #508991;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Main compacte */
+  main {
+    padding: 0 0.5rem;
+    margin: 0;
+    height: auto;
+  }
+
+  .main-header {
+    text-align: center;
+    margin: 0.3rem 0;
+    padding: 0;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .main-header h2 {
+    color: #247b7b;
+    font-size: 1.4rem;
+    margin: 0 0 0.1rem 0;
+    line-height: 1.2;
+  }
+
+  .main-header h3 {
+    color: #508991;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  hr {
+    margin: 0.3rem 0;
+    border-top: 1px solid #ddd;
+    height: 1px;
+  }
+
+  /* Layout del contingut */
+  .main-content {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  /* Sidebar */
+  aside {
+    border-right: 1px solid #ddd;
+    padding: 0 0.5rem 0 0;
+    margin: 0;
+  }
+
+  aside section {
+    padding: 0;
+    margin: 0 0 0.75rem 0;
+  }
+
+  aside h3 {
+    color: #247b7b;
+    font-size: 0.85rem;
+    margin: 0 0 0.3rem 0;
+    border-bottom: 1.5px solid #247b7b;
+    padding: 0 0 0.15rem 0;
+  }
+
+  aside h5 {
+    color: #508991;
+    font-size: 0.75rem;
+    margin: 0.4rem 0 0.15rem 0;
+  }
+
+  aside ul {
+    margin: 0;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    line-height: 1.25;
+  }
+
+  aside li {
+    margin-bottom: 0.08rem;
+    color: #333;
+  }
+
+  aside .skills-container {
+    display: block;
+    width: 100%;
+  }
+
+  aside .skills-container article {
+    display: block;
+    margin-bottom: 0.4rem;
+    page-break-inside: avoid;
+  }
+
+  /* Seccions principals */
+  section {
+    padding: 0;
+    margin: 0 0 0.6rem 0;
+  }
+
+  section h3 {
+    color: #247b7b;
+    font-size: 0.85rem;
+    margin: 0 0 0.3rem 0;
+    border-bottom: 1.5px solid #247b7b;
+    padding: 0 0 0.15rem 0;
+  }
+
+  section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  section li {
+    page-break-inside: avoid;
+    margin-bottom: 0.4rem;
+  }
+
+  section article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.4rem;
+    page-break-inside: avoid;
+  }
+
+  section h5 {
+    color: #508991;
+    font-size: 0.75rem;
+    margin: 0 0 0.15rem 0;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  section h6 {
+    color: #333;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0 0 0.1rem 0;
+    line-height: 1.2;
+  }
+
+  section p {
+    color: #555;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    margin: 0 0 0.15rem 0;
+  }
+
+  section i {
+    color: #777;
+    font-size: 0.62rem;
+    line-height: 1.2;
+  }
+
+  /* Timeline elements */
+  .point {
+    background-color: #247b7b;
+    width: 0.35rem;
+    height: 0.35rem;
+    margin-top: 0.15rem;
+  }
+
+  .line {
+    height: 100%;
+    width: 0.35rem;
+  }
+
+  .line span {
+    background-color: #ccc;
+    width: 1px;
+  }
+
+  /* Languages */
+  .languages-container {
+    gap: 0.5rem;
+  }
+
+  .language-item {
+    page-break-inside: avoid;
+    gap: 0.25rem;
+  }
+
+  .language-name h5 {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  .level-bar {
+    background-color: #eee;
+    height: 5px;
+  }
+
+  .level-fill {
+    background: #247b7b;
+  }
+
+  .level-text {
+    color: #666;
+    font-size: 0.62rem;
+    min-width: 55px;
+  }
+
+  /* Certifications list */
+  #certifications ul {
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  #certifications li {
+    font-size: 0.7rem;
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
+    color: #333;
+  }
+
+  /* Footer */
+  footer {
+    position: static;
+    background: white;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.6rem;
+    padding: 0.3rem 0;
+    margin-top: 0.5rem;
+  }
+
+  /* Marges de pàgina */
+  @page {
+    margin: 1.2cm 0.8cm;
+    size: A4 portrait;
   }
 }

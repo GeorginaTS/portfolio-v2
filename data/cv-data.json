@@ -93,7 +93,21 @@
     ],
     "experience": [
         {
-            "years": "2023 - 2011",
+            "years": "2023 - 2025",
+            "title": {
+                "ca": "Desenvolupadora Full-stack Freelance",
+                "es": "Desarrolladora Full-stack Freelance",
+                "en": "Freelance Full-stack Developer"
+            },
+            "description": {
+                "ca": "Desenvolupament d'aplicacions web completes, des de la interfície d'usuari fins al backend i bases de dades. Frontend: Vue.js, Angular, React, HTML5, CSS3, Tailwind CSS i JavaScript modern. Backend: Node.js amb TypeScript, Express.js, NestJS, treballant amb MongoDB, MySQL i dissenyant RESTful APIs. Integració amb Firebase, Git, Docker i AWS.",
+                "es": "Desarrollo de aplicaciones web completas, desde la interfaz de usuario hasta el backend y bases de datos. Frontend: Vue.js, Angular, React, HTML5, CSS3, Tailwind CSS y JavaScript moderno. Backend: Node.js con TypeScript, Express.js, NestJS, trabajando con MongoDB, MySQL y diseñando RESTful APIs. Integración con Firebase, Git, Docker y AWS.",
+                "en": "Full-stack web application development, from user interface to backend and databases. Frontend: Vue.js, Angular, React, HTML5, CSS3, Tailwind CSS and modern JavaScript. Backend: Node.js with TypeScript, Express.js, NestJS, working with MongoDB, MySQL and designing RESTful APIs. Integration with Firebase, Git, Docker and AWS."
+            },
+            "location": "Remote"
+        },
+        {
+            "years": "2011 - 2023",
             "title": {
                 "ca": "Responsable de granja d'avicultura ecològica. Autònoma.",
                 "es": "Responsable de granja de avicultura ecológica. Autónoma.",
@@ -107,7 +121,7 @@
             "location": "Sot del Palau (Arbúcies)"
         },
         {
-            "years": "2011 - 2007",
+            "years": "2007 - 2011",
             "title": {
                 "ca": "Directora de projectes online",
                 "es": "Directora de proyectos online",
@@ -121,7 +135,7 @@
             "location": "JIP MOTOR (Barcelona)"
         },
         {
-            "years": "2007 - 2000",
+            "years": "2000 - 2007",
             "title": {
                 "ca": "Desenvolupadora web",
                 "es": "Desarrolladora web",

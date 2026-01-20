@@ -104,7 +104,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const downloadBtn = document.getElementById('downloadPdfBtn');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', () => {
-            window.print();
+            const lang = getCurrentLanguage();
+            const pdfFiles = {
+                'ca': './docs/resume-ca.pdf',
+                'en': './docs/resume-en.pdf',
+                'es': './docs/resume-es.pdf'
+            };
+            
+            const pdfUrl = pdfFiles[lang] || pdfFiles['ca'];
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = `resume-${lang}.pdf`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     }
 });

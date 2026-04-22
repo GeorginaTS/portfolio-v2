@@ -66,5 +66,22 @@
         "technologies": ["Vue.js", "Pinia", "Tailwind", "Express.js", "MongoDB"],
         "demoUrl": "https://calm-smoke-01af5fd10.6.azurestaticapps.net",
         "repoUrl": "https://github.com/GeorginaTS/todo-app"
+    },
+    {
+        "id": "melsdelmontnegre",
+        "image": "./img/projects/melsdelmontnegre.png",
+        "title": {
+            "ca": "Mels del Montnegre",
+            "es": "Mels del Montnegre",
+            "en": "Mels del Montnegre"
+        },
+        "description": {
+            "ca": "Web per a un productor artesanal de mel de proximitat. Mostra el catàleg de varietats, punts de venda i la història del projecte apícola, amb un disseny càlid i natural que reflecteix l'autenticitat del producte.",
+            "es": "Web para un productor artesanal de miel de proximidad. Muestra el catálogo de variedades, puntos de venta y la historia del proyecto apícola, con un diseño cálido y natural que refleja la autenticidad del producto.",
+            "en": "Website for an artisan local honey producer. Showcases the variety catalogue, market locations and the story behind the beekeeping project, with a warm, natural design that reflects the product's authenticity."
+        },
+        "technologies": ["HTML", "CSS", "JavaScript", "Google Analytics"],
+        "demoUrl": "https://melsdelmontnegre.cat",
+        "repoUrl": ""
     }
 ]

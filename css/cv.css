@@ -324,6 +324,14 @@ aside #skills > .skills-container > article {
     }
   }
 }
+/* certifications + languages two-column row */
+.certifications-languages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
 /* certifications */
 #certifications > ul {
   background-color: rgba(255, 255, 255, 0.05);
